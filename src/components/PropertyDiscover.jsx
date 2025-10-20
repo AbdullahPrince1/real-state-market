@@ -3,7 +3,7 @@ import { MapPin, ArrowRight } from "lucide-react";
 export default function PropertyDiscover() {
   return (
     <section className="flex flex-col md:flex-row items-center justify-between bg-white py-12 px-6 md:px-16 gap-8">
-      <div className="relative w-full md:w-1/2 flex justify-center">
+      <div className=" w-full md:w-1/2 flex justify-center">
         <img
           src="/discoverMap.png"
           alt="Map showing properties"
