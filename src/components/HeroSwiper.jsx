@@ -8,19 +8,22 @@ import "swiper/css/pagination";
 export default function HeroSwiper() {
   const slides = [
     {
-      image: "/images/slide1.jpg",
+      image:
+        "https://mbluxury1.s3.amazonaws.com/2024/04/17092933/Luxury-Real-Estate-Brands.jpg",
       title: "Discover the Future",
       subtitle: "Innovate. Create. Inspire.",
       button: "Get Started",
     },
     {
-      image: "/images/slide2.jpg",
+      image:
+        "https://images.squarespace-cdn.com/content/v1/6192b02960e94236fc22acce/1619b64e-7cb8-47f7-b1c8-97372376891f/Real+Esta.jpg",
       title: "Empower Your Ideas",
       subtitle: "Building digital experiences that matter.",
       button: "Learn More",
     },
     {
-      image: "/images/slide3.jpg",
+      image:
+        "https://www.mckissock.com/wp-content/uploads/2016/11/GettyImages-1151832961.jpg",
       title: "Transform Your Business",
       subtitle: "Let’s build something amazing together.",
       button: "Contact Us",

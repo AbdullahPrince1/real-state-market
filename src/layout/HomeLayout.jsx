@@ -1,6 +1,8 @@
 import Navbar from "../components/Navbar";
 import HeroSwiper from "../components/HeroSwiper";
 import PropertyDiscover from "../components/PropertyDiscover";
+import Footer from "../components/Footer";
+import Properties from "../components/Properties";
 
 export default function HomeLayout() {
   return (
@@ -15,7 +17,13 @@ export default function HomeLayout() {
         <section className="max-w-7xl mx-auto">
           <PropertyDiscover />
         </section>
+        <section className="max-w-7xl mx-auto">
+          <Properties />
+        </section>
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }
