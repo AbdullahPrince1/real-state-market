@@ -35,12 +35,7 @@ export default function RegisterPage() {
               style: {
                 background: "green",
               },
-            },
-            error: {
-              style: {
-                background: "red",
-              },
-            },
+            }
           }}
         />
         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">

@@ -1,10 +1,11 @@
 import { use } from "react";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../provider/AuthProvider";
 import toast, { Toaster } from "react-hot-toast";
 
 export default function LoginPage() {
   const { logInUser } = use(AuthContext);
+  const navigate = useNavigate()
   const handleLoginForm = (evt) => {
     evt.preventDefault();
 
@@ -14,6 +15,7 @@ export default function LoginPage() {
     logInUser(email, password)
       .then(() => {
         toast("Log In Successful");
+        navigate("/")
       })
       .catch((err) => {
         toast("Log in error", err.message);
@@ -28,12 +30,7 @@ export default function LoginPage() {
               style: {
                 background: "green",
               },
-            },
-            error: {
-              style: {
-                background: "red",
-              },
-            },
+            }
           }}
         />
         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
